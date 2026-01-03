@@ -1,9 +1,111 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PaceBuddy | Running & Cycling App</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<p>test</p>
+	<header>
+		<nav class="navbar" aria-label="Hauptnavigation">
+			<a href="index.html" class="logo-area">
+				<img src="media/logo.png" alt="PaceBuddy Logo" width="40" height="40">
+				<span class="logo-text">PaceBuddy</span>
+			</a>
+
+			<ul class="nav-links">
+				<li><a href="product.html">Dein PaceBuddy</a></li>
+				<li><a href="index.html" style="color: var(--accent-color);">Shop</a></li>
+				<li><a href="contact.html">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<video aria-hidden="true" autoplay muted loop playsinline poster="media/main-hero.jpg" tabindex="-1">
+				<source src="media/bg-video.mp4" type="video/mp4">
+				Dein Browser unterstützt keine Videos.
+			</video>
+			<p class="sr-only">
+				Dekoratives Hintergrundvideo ohne inhaltliche Information.
+			</p>
+			<div class="hero-content">
+				<h1>Find your Pace. Win your Race.</h1>
+				<p>Die KI-gestützte Trainingsapp für Läufer und Radfahrer.</p>
+				<a href="#preise" class="btn">Abos ansehen</a>
+			</div>
+		</section>
+
+		<section style="text-align: center; margin: 40px 0;">
+			<h2>Sound of Success</h2>
+			<p>Höre den PaceBuddy Ziel-Sound, der dich am Ende jedes Trainings erwartet.</p>
+			<audio controls aria-label="Audio-Beispiel: PaceBuddy Ziel-Sound">
+				<source src="media/notify.mp3" type="audio/mpeg">
+				Dein Browser unterstützt dieses Audio-Element nicht.
+			</audio>
+			<p class="sr-only">
+				Kurzer Signalton als Ziel-Feedback. Kein gesprochener Inhalt.
+			</p>
+		</section>
+
+		<section id="preise">
+			<h2>Wähle deinen Plan</h2>
+			<div class="pricing-grid">
+				<article class="plan">
+					<h3>PaceBuddy CORE</h3>
+					<h4 class="price">0 €</h4>
+					<ul>
+						<li>GPS Tracking</li>
+						<li>Basis-Statistiken</li>
+						<li>Community Support</li>
+						<li>Werbeeinblendungen</li>
+					</ul>
+					<button class="btn" style="background-color: #555; color: white;">Kostenlos laden</button>
+				</article>
+
+				<article class="plan featured">
+					<div
+						style="position:absolute; top:-10px; right: 20px; background:var(--accent-color); color:black; padding:2px 10px; font-weight:bold; font-size:0.8rem;">
+						BESTSELLER</div>
+					<h3>PaceBuddy ULTRA</h3>
+					<h4 class="price">9,99 € <span style="font-size:1rem; color:white;">/ Monat</span></h4>
+					<ul>
+						<li>Alles aus Core</li>
+						<li><strong>KI-Coach</strong></li>
+						<li>Offline Karten</li>
+						<li>Live-Tracking</li>
+						<li>Keine Werbung</li>
+					</ul>
+					<a href="#" class="btn" onclick="alert('Abonnementprozess gemocked!')">Jetzt abonnieren</a>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+			<p>&copy; 2026 Endurance Tech GmbH.</p>
+
+			<p style="margin-bottom: 15px;">
+				<a href="about.html">Unsere Marke</a> |
+				<a href="contact.html">Kontakt</a> |
+				<a href="credits.html">Credits & Medien</a> |
+				<a href="license.html">Lizenz (EULA)</a>
+			</p>
+
+			<p style="font-size: 0.85rem;">
+				<a href="impressum.html">Impressum</a> |
+				<a href="datenschutz.html">Datenschutz</a> |
+				<a href="barrierefreiheit.html">Barrierefreiheit</a>
+			</p>
+		</div>
+	</footer>
+
 </body>
+
+</html>
